@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+frontend:
+  api:
+    url: http://localhost:4200
+
+jwt:
+  secret:
+    key: secretKey@123
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_angular
+    username: root
+    password: password
